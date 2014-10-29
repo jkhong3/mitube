@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :videos, only: [:index, :new, :create]
   root 'videos#index'
+
+  get 'videos/new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
